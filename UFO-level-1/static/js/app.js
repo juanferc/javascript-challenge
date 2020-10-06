@@ -1,8 +1,9 @@
+// Retrieve data from data.js and create variables to hold it
 var table_data = data; 
 
 var table_body = d3.select("tbody");
 
-
+// Use forEach loop to append data to variables
 
 table_data.forEach((data) => {
     var row = table_body.append("tr");
@@ -11,6 +12,8 @@ table_data.forEach((data) => {
         cell.text(value);
     });
 });
+
+
 
 var button = d3.select("#filter-btn");
 
